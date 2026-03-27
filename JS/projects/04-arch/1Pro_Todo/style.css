@@ -1,0 +1,73 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo e fundo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #5d5c61;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* Estilo da lista */
+ul {
+    list-style-type: none;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+    padding: 0;
+}
+
+li {
+    background-color: #e8f0fe;
+    padding: 12px;
+    margin: 5px 0;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+    transition: background 0.3s;
+}
+
+/* Efeito de hover nos itens da lista */
+li:hover {
+    background-color: #cfe0fc;
+}
+
+/* Estilo do campo de entrada */
+input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 2px solid #5d5c61;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Efeito de foco no campo de entrada */
+input[type="text"]:focus {
+    border-color: #6a89cc;
+    background-color: #f0f4f8;
+}

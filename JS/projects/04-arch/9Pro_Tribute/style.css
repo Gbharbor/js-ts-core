@@ -1,0 +1,97 @@
+ body {
+    margin: 0;
+    background-color: white;
+ }
+ .header {
+    display: flex;
+    width:auto;
+    background-color: orange;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.name {
+    text-align: center;
+    color: white;
+    margin: 10px;
+    background-color: black;
+    width: 600px;
+    height: 100px;
+}
+.name, h1 {
+    color: white;
+    font-size: 40px;
+    text-shadow: 3px 3px 3px rgb(15, 12, 12);
+}
+.name, h1:hover {
+    text-shadow: 1px 1px 0px rgb(234, 0, 255);
+    color: orange;
+}
+
+.container {
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.title {
+    margin-left: 10px;
+    width: 400px;
+}
+button {
+    width: 200px;
+    color: white;
+    background-color: orange;
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+
+}
+button:hover {
+    color: orange;
+    background-color: black;
+    text-shadow: 1px 1px 0px rgb(234, 0, 255);
+}
+.text {
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    padding-left: 10px;
+}
+img {
+    width: 700px;
+    border: 4px solid black;
+}
+footer {
+    padding-top: 20px;
+    margin: 10px;
+}
+#abotao {
+    text-decoration: none;
+    color: white;
+}
+#atext {
+    text-decoration: none;
+    color: black;
+}
+#abotao:visited {
+    color: white;
+}
+#atext:visited {
+    color: black;
+}
+
+
+@media (max-width:600px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+    img {
+        width: 400px;
+    }
+    button{
+        margin-top: 15px;
+    }
+}

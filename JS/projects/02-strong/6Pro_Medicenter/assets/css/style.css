@@ -1,0 +1,452 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    display: flex;
+}
+/*com o block,tenho mais opcoes de alteracao caso eu queira*/
+nav a {
+    display: block; 
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+}
+nav .active a,
+nav a:hover {
+    background-color: #39aae1;
+    color: white;
+}
+/*isso e outra forma de adicionar imagem, nao foi ensinado ainda*/
+/*esse cover e para preencher todo o espaco disponivel*/
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image:url('../img/img1.jpg') ;
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+}
+.column {
+    flex-direction: column;
+}
+.banner_headline {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner_headline h1 {
+    color: white;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px #555555;
+    margin: 0px;
+    padding: 0px;
+    max-width: 350px;
+}
+.banner_headline h2 {
+    color: white;
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #555555;
+    margin-top: 30px;
+    padding: 0px;
+    max-width: 300px;
+}
+.banner_options {
+    height: 210px;
+    display: flex;
+
+}
+.banner1,
+.banner2,
+.banner3 {
+        flex: 1;
+        color: white;
+        padding: 20px;
+        font-size: 21px;
+}
+.banner1 {
+    background-color: #39aae1 ;
+}
+.banner2 {
+    background-color: #0079c7 ;
+}
+.banner3 {
+    background-color: #2b4c99 ;
+}
+.banner_title {
+    font-size:21px;
+}
+.banner_desc {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*Elementos com display INLINE-BLOCK vão se manter posicionados um ao lado do outro, sem quebras de linhas (comportamento herdado do inline), mas te dão a liberdade de atribuir a eles width, height, margins e paddings (comportamento herdado do block). Simples assim!*/
+.banner_options a {
+    display: inline-block;
+    border: 1px solid white ;
+    padding: 5px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+.monday-friday, .Saturday, .Sunday {  
+    padding-top:20px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    border-bottom: 2px solid #fff3;
+}
+/*Aqui eu construo o corpo do site*/
+#geral {
+    display: flex;
+    justify-content:center ;
+}
+/*Aqui ficara a parte que ficara mais na parte central*/
+#geral section {
+    flex: 2;
+}
+/*ja aqui ficara a parte lateral*/
+#geral aside {
+    flex: 1;
+}
+.widget-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widget-title-text {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.widget-title-bar {
+    width: 50px;
+    height: 2px;
+    background-color: #36a9e1;
+    margin-top: 10px;
+}
+
+
+/*Area departamentos*/
+.Departments1, .Departments2, .Departments3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-between;
+
+}
+.dep_square1, .dep_square2, .dep_square3 {
+    width: 150px;
+    height: 150px;
+    background-color: #0079c7;
+}
+.Departments3 {
+    justify-content: space-between;
+
+}
+
+/*PARTE DAS NOTICIAS*/
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+article a {
+    text-decoration: none;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+article .news_data {
+    display: flex;
+}
+article .news_posted_at {
+    background-color: #2b4c99;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+article .news_comments {
+    background-color: #39aae1;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+}
+article .news_thumbnail {
+    margin-top: 30px;
+}
+article .news_thumbnail img {
+    width: 100%;
+    height: auto;
+}
+article .news_title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: black;
+    font-size: 23px;
+}
+article .news_resume {
+    color: #5c5c5c;
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+/*rodape*/
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+.footer_menu {
+    display: flex;
+    flex: 1;
+}
+.footer_menu a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+}
+.fm_1, .fm_2, .fm_3 {
+    flex: 1;
+    color: white;
+
+}
+.fm_1 {
+    background-color: #39aae1 ;
+}
+.fm_2 {
+    background-color: #0079c7 ;
+}
+.fm_3 {
+    background-color: #2b4c99 ;
+}
+.footer_area {
+    display: flex;
+}
+.footer_areaitem {
+    flex: 1;
+    color: white;
+
+}
+.footer_area .text1 {
+    font-size: 12px;
+    color: #727272;
+    width: 270px;
+    line-height: 18px;
+}
+
+/*tive que criar essa class nova para poder mudar para column, caso contraria ficaria uma div ao lado da outra que e o q eu n quero, e sim uma abaixo da oturao como mostra no projeto*/
+.flexcolumn {
+    flex-direction: column;
+}
+footer .widget-title-text {
+    color: white;
+
+
+}
+.footer_copy {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
+}
+.footer_copy, a {
+    text-decoration: none;
+    color:#5c5c5c;
+}
+.inicial_page:hover {
+    text-decoration: underline;
+}
+.contact {
+    display: block;
+    margin-top: 30px;
+}
+.contact_option {
+    margin-bottom: 3px;
+    padding-bottom: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact_option span {
+    color: #727272;
+    font-size: 12px;
+}
+.number {
+    align-items:flex-start;
+    padding-right: 98px;
+}
+.email {
+    font-size: 12px;
+    color: white;
+    padding-right:50px;
+}
+footer .footer_icons img {
+    height: 30px;
+    width: 30px;
+}
+footer .social_icons {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.icon1, .icon2, .icon3 {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom:30px ;
+    margin-right: 5px;
+}
+.text_big {
+font-size: 21px;
+
+}
+.text_small {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.text_small:hover {
+    text-decoration: underline;
+}
+
+/*Menu para mobile*/
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm_line {
+    height: 4px;
+    background-color: #39aae1;
+}
+/*tamanho para tela abaixo de 600px*/
+
+@media (max-width:600px) {
+    .banner_headline {
+        padding: 20px;
+    }
+    .banner_headline h1 {
+        font-size: 55px;
+        
+    }
+    .banner_headline h2 {
+        font-size: 17px;
+    }
+    .banner_options {
+        height: auto;
+        flex-direction: column;
+    }
+    .container {
+        flex-direction: column;
+    }
+    #geral section,
+    #geral aside  {
+        padding: 20px;
+
+    }
+    #geral {
+        padding-top: 20px;
+    }
+    .footer_menu {
+        flex-direction: column;
+    }
+    .footer_area {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer_copy {
+        padding: 20px;
+    }
+    header .container {
+        flex-direction: row;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: white;
+    }
+    header {
+        height: auto;
+    }
+    .logo {
+        padding: 20px;
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }  
+}
+
+@media (max-width:926px) {
+    .Departments1, .Departments2, .Departments3 {
+        justify-content: space-around;
+        margin-top: 5px;
+
+    }
+    .dep_square1, .dep_square2, .dep_square3 {
+        width: 200px;
+        height: 200px;
+        margin-top: 25px;
+    }
+    #geral section,
+    #geral aside  {
+        padding: 5px;
+    }
+    .footer_area {
+        padding: 5px;
+    }
+    .logo {
+        padding: 5px;
+    }
+    .footer_copy {
+        padding: 5px;
+    }
+}

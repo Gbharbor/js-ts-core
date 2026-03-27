@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+header .logo {
+    font-size: 23px;
+    font-weight: bold;
+    align-items: center;
+    color: black;
+}
+
+header .menu {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header .menu_line {
+    height: 3px;
+    background-color: white;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+.container .leftside {
+    flex: 1;
+    background-color: #dbd0ce;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.container .rightside {
+    flex: 1;
+    background-color: white;
+    background-image: url(../img/andrej-lisakov-V2OyJtFqEtY-unsplash.jpg);
+    background-size: cover;
+    background-position: central;
+}
+
+.container .info {
+    color: black;
+}
+.container .info .profession {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+}
+.container .info .name {
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.container .info .buttons a {
+    margin-left: 20px;
+    display: inline-block;
+    background-color: #5685a1;
+    color: white;
+    padding: 20px 40px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #111;
+    border-radius: 5px;
+}
+
+.container .info .buttons a.light {
+    color: white;
+    background-color: #25405c;
+
+}
+.container .info .buttons a:hover {
+    opacity: 0.8;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    font-size: 14px;
+    padding: 20px;
+
+}
+
+footer a {
+    color: white;
+}
+
+@media (max-width:920px) {
+    header {
+        position: initial; /*posicionamento original*/
+        background-color: #25405c;
+    }
+    header .menu_line {
+        background-color: white;
+    }
+    header .logo {
+        color: white;
+    }
+    .container {
+        flex-direction: column;
+        height: calc(100vh - 66px); /*dessa forma eu tiro a bara de rolagem*/
+    }
+    .container .leftside {
+        flex: none;
+        padding: 30px 20px;
+        justify-content: center;
+        text-align: center;
+    }
+    footer {
+        position: initial;
+        font-size: 16px;
+        color: #333;
+    }
+    footer a {
+         color: #333;
+    }
+}
+@media (max-width:488px) {
+    .container .leftside .info .name {
+        font-size: 50px;
+    }
+     .buttons {
+        display: flex;
+        flex-direction: column;
+   
+        }
+    .buttons a {
+        margin-top: 10px;
+    }
+}

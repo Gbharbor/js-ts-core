@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+}
+.menu_header {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 7px;
+    padding-top: 12px;
+}
+.menu_header a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+.menu_header a:hover {
+    text-decoration: underline;
+}
+.icons {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*Aqui fiz o fundo cinza do menu*/
+.icon1 {
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 30px;
+    height: 30px;
+}
+.icon1:hover {
+    border-radius: 20px;
+    background-color:  #f2f2f2;
+}
+/*Fundo da fotinha redonda*/
+.icon2 {
+    width:35px;
+    height: 35px;
+    padding-top: 5px;
+    padding-left:5px;
+}
+.icon2:hover {
+    border-radius: 20px;
+    background-color:  #f2f2f2;
+}
+
+#p_pic {
+    border-radius: 15px;
+}
+
+/*A partir daqui comeca a parte central do site*/
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+.search_container {
+    display: flex;
+    flex-direction: column;
+}
+.search_container .logo {
+    margin-bottom: 20px;
+}
+/*Aqui esta td conteudo do input e acess*/
+.search_bar {
+    border: 1px solid #dfe1e5;
+    border-radius: 50px;
+    display: flex;
+    width: 580px;
+    height: 45px;
+    line-height: 40px;
+    background-color: #fff;
+    font-size: 15px;
+}
+/*Quando passamos o mouse por cima da caixa de busca*/
+.search_bar:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    transition: all 0.4s ease; /*NAO APRENDI AINDA*/
+}
+/*Aqui estao nossos icones de pesquisa*/
+.access {
+    display: flex;
+    align-items:center;
+}
+/*espacamento dos icones de pesquisa*/
+.access img {
+    display: flex;
+    margin-right: 10px;
+}
+input {
+    border: none;
+    margin-left: 20px;
+    outline: 0; /*isso e para tirar a caixa azul quando clicamos*/
+    border-radius: 50px;
+    font-size: 15px;
+    width: 460px;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    margin: 30px 5px; /*30 de altura d cima e baixo e 5 entre os 2 botao*/
+    border: none;
+    border-radius: 4px;
+}
+button:hover {
+    border: 1px solid #dfe1e5;
+    box-shadow:0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+/*Aqui esta toda a area do footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, .54);
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer_geral {
+    margin-top: 120px;/*Aqui e o espaco do footer ate o section*/
+    font-size: 15px;
+}
+/*Area onde diz o pais no caso BRASIL*/
+.footer_header {
+    border-top: 1px solid #e4e4e4;/*Isso e a bordinha cinza que separa o footer da parte de cima*/
+    line-height: 40px;
+    min-width: 1000px; /*N lembro exato essa funcao*/
+}
+.footer_header span {
+    margin-left: 30px;
+}
+/*Aqui fica area de configuracoes*/
+.footer_settings {
+    border-top: 1px solid #e4e4e4; /*Isso e a bordinha cinza que separa o footer da parte de baixo*/
+    line-height:40px;
+    color: rgba(0, 0, 0, .54);
+}
+/*Aqui organizamos a cor dos nossos 2 span*/
+span a {
+    color: #5f6368;
+    font-size: 15px;
+    text-decoration: none;
+}
+span a:hover {
+    text-decoration: underline;
+}
+/*Aqui separamos eles*/
+.span_left {
+    float: left;
+}
+.span_right {
+    float: right;
+    margin-right: 30px;
+}
+.span_left a, .span_right a {
+    margin-left: 30px;
+}
+
+@media screen and (max-width:788px) {
+    .span_right {
+        float:left;
+    }
+}
+@media screen and (max-width:600px) {
+    .search_bar {
+        width: 450px;
+
+    }
+}
+@media screen and (max-width:475px) {
+    .search_bar {
+        width: 400px;
+    }
+}
+@media screen and (max-width:475px) {
+    .search_bar {
+        width: 300px;
+        margin: auto;
+    }
+    button {
+        width: 120px;
+        height: 35px;
+        margin: 25px 5px;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:325px) {
+    .logo img {
+        height: 90px;
+    }
+}

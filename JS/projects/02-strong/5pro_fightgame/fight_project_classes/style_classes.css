@@ -1,0 +1,23 @@
+.fightarea {
+    display: flex; /*um ao lado do outro*/
+    gap: 20px; /*espaco entre os dois*/
+}
+#char,
+#monster {
+    flex: 1; /*divido o espaco ocupando 1 parte cada*/
+}
+.lifebar {
+    height: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+.lifebar .bar {
+    height: inherit; /*estou herdando aq coloquei acima*/
+    background: red;
+    border-radius: 5px;
+}
+.log {
+    border: 1px dotted #999;
+    height: 200px;
+    overflow-y: scroll; /*aqui coloco uma barra de rolagem na vertical*/
+}

@@ -1,0 +1,104 @@
+/* Definindo o estilo básico para o corpo */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Estilizando o título principal */
+h1 {
+    color: #333;
+    margin: 20px;
+    font-size: 2.5em;
+}
+
+/* Campo de formulário para um novo post */
+fieldset {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título do campo de formulário */
+legend {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Layout dos campos de entrada */
+div {
+    margin: 10px 0;
+}
+
+/* Input e Textarea */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    resize: none;
+    transition: all 0.2s;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    background-color: #fff;
+}
+
+/* Botão para inserir novo post */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilizando a área de posts */
+/* Estilizando a área de posts com altura fixa */
+.posts {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-height: 400px; /* Limita a altura dos posts */
+    overflow-y: auto;  /* Adiciona uma barra de rolagem quando necessário */
+}
+
+.posts h1 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.posts div {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.posts p {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0;
+}
