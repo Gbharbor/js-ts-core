@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staro</title>
+    <link rel="shortcut icon" href="./assets/img/staro_media/ico_staro-_1_.ico" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+</head>
+<body>
+    <!--MENU-->
+    <header>
+        <div class="header"> 
+            <div class="logo" >
+                    <a href="#home"><img src="./assets/img/Staro_media/logo_menu_staro.png" alt="logo da Staro"/>
+                    </a>
+            </div>
+            <div class="menu_toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a class="active" href="#home" onclick="hideMenu()">Inicio</a>
+                        </li>
+                        <li>
+                            <a  class="active" href="#about_us" onclick="hideMenu()">Sobre</a></li>
+                        <li>
+                            <a class="active" href="#process" onclick="hideMenu()">Processo</a></li>
+                        <li>
+                            <a class="active" href="#clients" onclick="hideMenu()">Clientes</a></li>
+                        <li>
+                            <a class="active" href="#team" onclick="hideMenu()">Team</a></li>
+                        <li>
+                            <a class="active" href="#testimonials" onclick="hideMenu()">testimonials</a></li>
+                        <li>
+                            <a class="active" href="#talktous" onclick="hideMenu()">contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>           
+        </div>
+    </header>
+    <main>
+        <!--BANNER-->
+        <span id="home"></span>
+        <section class="banner">
+            <div class="slide">  
+                <img class="imgbanner" src="./assets/img/Staro_media/logoStaro2.png">
+                <a href="#about_us" class="button">Sobre nos</a>
+            </div>
+        </section>
+        <!--SOBRE NOS-->
+        <span id="about_us"></span>
+        <br><br>
+        <hr>
+        <section class="default">
+            <div class="section_title">Sobre Nos</div>
+            <div class="section_desc">Conheca nossa historia</div>
+              <div class="section_body">
+                <div class="section_about_us">
+                  <div class="section_about_us_area">
+                    <p>Com mais de 25 anos de existência a Staro - Clean Rating presta serviços completos de recolhas, tratamentos e entregas de Roupas. Unicamente direccionados a empreendimentos hoteleiros que procuram elevados níveis de exigência de qualidade no tratamento de Roupas de Quartos, Restaurantes e Spa's, proporcionando total confiança e tranquilidade. </p>
+                    <br>
+                    <a href="#talktous" class="button">Saiba mais</a>
+                    <br>
+                    <video id="" autoplay muted loop>
+                        <source src="./assets/img/staro_media/staro_video.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!--METODO-->
+        <span id="process"></span>
+        <br><br>
+        <hr/>
+        <section class="default">
+            <div class="section_title">Processo</div>
+            <div class="section_desc">método</div>
+            <div class="section_body">
+                <div class="section_methods">
+                    <div class="section_method">
+                        <img src="assets/img/staro_icons/PickUp.png"/>
+                        <h4>SERVIÇO DE PICKUP</h4>
+                        <p>Sempre preparados</p>
+                    </div>
+                    <div class="section_method">
+                        <img src="assets/img/staro_icons/2.png"/>
+                        <h4>SERVIÇO DE PRESSING</h4>
+                        <p>Atenção ao detalhe</p>
+                    </div>
+                    <div class="section_method">
+                        <img src="assets/img/staro_icons/3.png"/>
+                        <h4>LAVAR & DOBRAR</h4>
+                        <p>Serviço de excelência</p>
+                    </div>
+                    <div class="section_method">
+                        <img src="assets/img/staro_icons/4.png"/>
+                        <h4>Rapido & Eficaz</h4>
+                        <p>Distribuidores qualificados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--CLIENTES-->
+        <span id="clients"></span>
+        <br><br>
+        <section class="default grey">
+            <div class="section_title">Clientes</div>
+            <div class="section_desc">hoteis mais conceituado do Portugal</div>
+            <div class="section_body">
+              <div class="section_clients">
+                <div class="section_clients_filters">
+                    <ul>
+                        <li class="active">Hoteis</li>
+                        <li>Grupo</li>
+                        <li>Estrelas</li>
+                    </ul>
+                </div>
+                <div class="section_clients_photos">
+                        <div class="section_client_photo">
+                            <div class="section_client_photoarea">
+                                <div class="section_client_photoinfo">
+                                    <h5>Corpo Santo</h5>
+                                    <a href="https://www.corposantohotel.com/" target="_blank">
+                                        <p>Conheca mais sobre</p>
+                                    </a>
+                                </div>
+                               <img src="./assets/img/staro_clients/hotel_corposanto.jpeg"/>
+                            </div>
+                        </div>
+                        <div class="section_client_photo">
+                            <div class="section_client_photoarea">
+                                <div class="section_client_photoinfo">
+                                    <h5>Praia do Sal<h5>
+                                    <a href="https://www.praiadosal.com/" target="_blank"> 
+                                        <p>Conheca mais sobre</p>
+                                    </a>
+                                </div>
+                                <img src="./assets/img/staro_clients/hotel_praiadosal.jpeg"/>
+                            </div>                          
+                        </div>
+                        <div class="section_client_photo">
+                            <div class="section_client_photoarea">
+                                <div class="section_client_photoinfo">
+                                    <h5>Blue Hotel</h5>
+                                    <a href="https://www.blueliberdadehotel.com/" target="_blank"> 
+                                    <p>Conheca mais sobre</p>
+                                    </a>
+                                </div>
+                                <img src="./assets/img/staro_clients/hotel_blue.jpeg"/>
+                            </div>
+                        </div>
+                        <div class="section_client_photo">
+                            <div class="section_client_photoarea">
+                                <div class="section_client_photoinfo">
+                                    <h5>Hotel da Baixa</h5>
+                                    <a href="https://www.hoteldabaixa.com/" target="_blank"> 
+                                    <p>Conheca mais sobre</p>
+                                    </a>
+                                </div>
+                                <img src="./assets/img/staro_clients/hotel_hoteldabaixa.jpeg"/>
+                            </div>
+                        </div>
+                        <div class="section_client_photo">
+                            <div class="section_client_photoarea">
+                                <div class="section_client_photoinfo">
+                                    <h5>Tejo Hotel</h5>
+                                    <a href="https://www.mystoryhotels.com/en/my-story-hotel-tejo/" target="_blank"> 
+                                    <p>Conheca mais sobre</p>
+                                    </a>
+                                </div>
+                                <img src="./assets/img/staro_clients/hotel_tejomystory.jpeg"/>
+                            </div>
+                        </div>
+                        <div class="section_client_photo">
+                            <div class="section_client_photoarea">
+                                <div class="section_client_photoinfo">
+                                    <h5>Britania</h5>
+                                    <a href="https://lisbonheritagehotels.com/pt-pt/hotel-britania/" target="_blank"> 
+                                    <p>Conheca mais sobre</p>
+                                    </a>
+                                </div>
+                                <img src="./assets/img/staro_clients/hotel_britania.jpeg"/>
+                            </div>
+                        </div>
+                        <div class="section_client_photo">
+                            <div class="section_client_photoarea">
+                                <div class="section_client_photoinfo">
+                                    <h5>Janelas Verde</h5>
+                                    <a href="https://lisbonheritagehotels.com/pt-pt/as-janelas-verdes-boutique-hotel/" target="_blank"> 
+                                    <p>Conheca mais sobre</p>
+                                    </a>
+                                </div>
+                                <img src="./assets/img/staro_clients/hotel_janelasverdes.jpeg"/>
+                            </div>
+                        </div>
+                        <div class="section_client_photo">
+                            <div class="section_client_photoarea">
+                                <div class="section_client_photoinfo">
+                                    <h5>Ouro</h5>
+                                    <a href="https://www.mystoryhotels.com/en/my-story-hotel-ouro/" target="_blank">
+                                        <p>Conheca mais sobre</p>
+                                    </a>
+                                </div>
+                                <img src="./assets/img/staro_clients/hotel_ouromystory.jpeg"/>                            
+                            </div>
+                        </div>
+                        <div class="section_client_photo">
+                            <div class="section_client_photoarea">
+                                <div class="section_client_photoinfo">
+                                    <h5>Rossio</h5>
+                                    <a href="https://www.mystoryhotels.com/en/my-story-hotel-rossio/" target="_blank">
+                                        <p>Conheca mais sobre</p>
+                                    </a>
+                                </div>
+                                <img src="./assets/img/staro_clients/RossioHotel.jpeg"/>
+                            </div>
+                        </div>
+                        <div class="section_client_photo">
+                            <div class="section_client_photoarea">
+                                <div class="section_client_photoinfo">
+                                    <h5>Figueira Hotel</h5>
+                                    <a href="https://www.mystoryhotels.com/pt/my-story-hotel-figueira/" target="_blank"> 
+                                        <p>Conheca mais sobre</p>
+                                    </a>
+                                </div>
+                                <img src="./assets/img/staro_clients/FigueiraHotel.webp"/>
+                            </div>
+                        </div>
+                        <div class="section_client_photo">
+                            <div class="section_client_photoarea">
+                                <div class="section_client_photoinfo">
+                                    <h5>Liberdade Hotel</h5>
+                                    <a href="https://lisbonheritagehotels.com/pt-pt/heritage-avenida-liberdade-hotel/" target="_blank"> 
+                                        <p>Conheca mais sobre</p>
+                                    </a>
+                                </div>
+                                <img src="./assets/img/staro_clients/LiberdadeHotelCERTO.jpeg"/>
+                            </div>
+                        </div>
+                        <div class="section_client_photo">
+                            <div class="section_client_photoarea">
+                                <div class="section_client_photoinfo">
+                                    <h5>Upon</h5>
+                                    <a href="https://uponlisbon.com/" target="_blank"> 
+                                        <p>Conheca mais sobre</p>
+                                    </a>
+                                </div>
+                                <img src="./assets/img/staro_clients/UponHotel.jpeg"/>
+                            </div>
+                        </div>
+                </div>
+                    <a href="#" class="button">Mostrar + </a>                    
+              </div>
+            </div>
+        </section>
+        <!--TIME-->
+        <span id="team"></span>
+        <br><br>
+        <section class="default bg_team">
+            <div class="section_team_area">
+            <div class="section_title team">TEAM</div>
+            <div class="section_desc">staff</div>
+                <div class="section_body">
+                    <div class="section_team">
+                        <div class="slide">
+                            <img class="section_team_avatar" src="./assets/img/staro_media/logoStaro2.png"/>
+                            <div class="section_team_name">
+                                    Angelo Marques
+                            </div>
+                            <div class="section_team_role">
+                                    CPO
+                            </div>
+                            <div class="section_team_social">
+                                <a href=""><img src="assets/img/icones/facebook.png"/></a>
+                                <a href=""><img src="assets/img/icones/linkedin.png"/></a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img class="section_team_avatar" src="./assets/img/staro_media/logoStaro2.png"/>
+                            <div class="section_team_name">
+                                Dulce Marques
+                            </div>
+                            <div class="section_team_role">
+                                CEO
+                            </div>
+                            <div class="section_team_social">
+                                <a href=""><img src="assets/img/icones/facebook.png"/></a>
+                                <a href="https://www.linkedin.com/in/dulce-marques-b2384780/" target="_blank" ><img src="assets/img/icones/linkedin.png"/></a>
+                            </div>
+                        </div>
+                    </div><!--section team-->
+                </div><!--section body-->
+            </div>
+        </section>
+        <!--TESTEMUNHO-->
+        <span id="testimonials"></span>
+        <br><br><br>
+        <section class="default">
+            <div class="section_title">testimonials</div>
+            <div class="section_desc">Review de nossos clientes</div>
+            <div class="section_body">
+                <div class="section_testimonials">
+                    <div class="sliders" style="margin-left:0vw;">
+                        <div class="slide">
+                            <div class="slidearea">
+                                <div class="section_testimonials_avatar">
+                                    <a href="https://www.corposantohotel.com/" target="_blank">
+                                <img src="./assets/img/staro_media/CorpoSantoTestimonials.png"/>
+                                    </a>
+                                </div>
+                                <div class="section_testimonials_name">
+                                    John Nunu Silva
+                                </div>
+                                <div class="section_testimonials_role">
+                                    Director
+                                </div>
+                                <img class="section_testimonials_quoteimg" src="assets/img/icones/quote.png"/>
+                                <div class="section_testimonials_quote">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur corporis facilis autem consequatur laudantium ea voluptate sapiente ab.
+                                </div>
+                            </div><!--slidearea-->
+                        </div><!--slide-->
+                    </div> <!--sliders-->
+                </div> <!--testimonails-->
+            </div><!--section body-->
+        </section>
+        <!--COMPANIAS-->
+        <section class="default section_companies">
+            <div class="section_body">
+                <div class="section_companies_area">
+                    <img src="./assets/img/staro_clients/staro_clientes.png"/>
+                </div>
+            </div>
+        </section>        
+        <!--FALE CONOSCO-->
+        <span id="talktous"></span>
+        <br><br><br>
+        <section class="default light">
+            <div class="section_title">Fale Conosco</div>
+            <div class="section_desc">Nossa equipe entrara em contato em breve.</div>
+            <div class="section_body">
+                <div class="section_contact">
+                    <form method="POST">
+                        <div class="section_contact_split">
+                            <input type="text" name="name" placeholder="Nome" required minlength="3"/>
+                            <input type="email" name="email" placeholder="Email" required/>
+                        </div>
+                        <input type="text" name="name" placeholder="Assunto"/>
+                        <textarea name="message"></textarea>
+                        <input type="submit" value="Enviar" class="button" onclick="submitForm()"/>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--MAPA-->
+        <section class="section_map">
+            <div class="section_map_area">
+                    <iframe class="map_staro" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3081.992717750399!2d-9.134099890199181!3d39.42428912846218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd18b2e71d20afa7%3A0xaf39968285028213!2sSTARO%20-%20Clean%20Rating!5e0!3m2!1sen!2spt!4v1703104382942!5m2!1sen!2spt" width="600" height="450" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_area">
+            <div class="footer_item area1">
+                <div class="footer_social">
+                    <a href="#">
+                        <img src="assets/img/icones/twitter.png"/>
+                    </a>
+                    <a href="#">
+                        <img src="assets/img/icones/linkedin.png"/>
+                    </a>
+                    <a href="#">
+                        <img src="assets/img/icones/facebook.png"/>
+                    </a>
+                    <a href="#">
+                        <img src="assets/img/icones/googleplus.png"/>
+                    </a>             
+                </div>
+            </div>
+            <div class="footer_item area2">
+                        <div class="area_area2">Todos os direitos reservados &COPY;DevHarbor 
+                            <a href="https://www.linkedin.com/in/drportox/" target="_blank" id="saiba_mais">Saiba Mais</a>
+                        </div>
+            </div>
+            <div class="footer_item area3">
+                <form method="POST">
+                    <input style="text-transform: uppercase;" type="email" name="email" placeholder="seu email aqui"/>
+                    <button class="btn">
+                            Inscreva-se
+                    </button>
+                </form>
+            </div>
+        </div><!--section footer area-->
+    </footer>
+    <script src="./assets/js/staro.js"></script>
+</body>
+</html>

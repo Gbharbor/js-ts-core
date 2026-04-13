@@ -1,22 +1,23 @@
-# JavaScript & TypeScript Study Repository
+# JavaScript & TypeScript Repository
 
 ## Stack
 
-* JavaScript (ES6+)
-* TypeScript
-* DOM API
+- JavaScript
+- TypeScript
+- DOM API
 
 ---
 
-Repositório dedicado ao estudo e prática de **JavaScript** e **TypeScript**, com foco em evolução progressiva — dos fundamentos até aplicações mais próximas do mercado.
+This repository is dedicated to studying and practicing **JavaScript** and **TypeScript**, with a focus on progressive learning — from fundamentals to more practical, real-world applications.
 
-O conteúdo está estruturado de forma modular, acompanhando a evolução do aprendizado e a adoção de boas práticas de desenvolvimento.
+The content is organized in a modular structure, following the learning evolution and the adoption of good development practices.
 
 ---
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
-```js_ts/
+```text
+js_ts/
 ├── JS/
 │   ├── 01-intro/
 │   ├── 02-fundamentals/
@@ -51,31 +52,11 @@ O conteúdo está estruturado de forma modular, acompanhando a evolução do apr
 │   │   ├── 08-operators/
 │   │   └── 09-key-values-entries/
 │   │
-│   └── projects/  ⚠️ EM MANUTENÇÃO
-│                  (projetos serão refatorados e migrados para repositórios dedicados)
+│   └── projects/  ⚠️ UNDER MAINTENANCE
+│                  (projects will be refactored and moved to dedicated repositories)
 │
 ├── TS/
 │   ├── 01-dom/
 │   ├── 02-type-system/
 │   ├── 03-objects-custom-types/
 │   └── 04-setup-tooling/
-```
-
----
-
-## Objetivo
-
-* Consolidar fundamentos sólidos em JavaScript
-* Evoluir para um uso mais robusto com TypeScript
-* Aplicar boas práticas desde o início
-* Servir como base para projetos reais (frontend e backend)
-
----
-
-## Observações
-
-* Código com foco didático e progressivo
-* Estrutura pensada para facilitar revisão e manutenção
-* Uso crescente de padrões profissionais (modularização, tipagem, organização)
-
----

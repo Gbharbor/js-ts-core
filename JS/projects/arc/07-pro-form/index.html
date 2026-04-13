@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratice form</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="form_image">
+            <img src="./img/newone.svg"/>
+        </div>
+        <div class="form">
+        <form>
+            <div class="form_header">
+
+                <div class="title">
+                    <h1>Registrar-se</h1>
+                </div>
+                <div class="login_button">
+                    <button><a href="#">Enviar</a></button>
+                </div>
+                
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <label for="firstname">Nome:</label>
+                    <input type="text" id="firstname" name="firstname" required placeholder="seu primeiro nome"/>
+                </div>
+                <div class="input_box">
+                    <label for="lastname">Sobrenome:</label>
+                    <input type="text" id="lastname" name="lastname" required placeholder="seu sobrenome"/>
+                </div>
+                <div class="input_box">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="seu email"/> 
+                </div>
+                <div class="input_box">
+                    <label for="number">Numero:</label>
+                    <input type="tell" id="number" name="number" required placeholder="seu wpp"/>
+                </div>
+                <div class="input_box">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required placeholder="digite sua senha"/>
+                </div>
+                <div class="input_box">
+                    <label for="confirmpassword">Repitir Senha:</label>
+                    <input type="password" id="confirmpassword" name="confirmpassword" required placeholder="Repitir Senha"/>
+                </div>
+            </div>
+
+            <div class="gender_group">
+                <div class="gender_input">
+                    <input type="radio" id="female" name="gender"/>
+                    <label for="female">Feminino</label>
+                </div>
+                <div class="gender_input">
+                    <input type="radio" id="male" name="gender"/>
+                    <label for="male">Masculino</label>
+                </div>
+                <div class="gender_input">
+                    <input type="radio" id="others" name="gender"/>
+                    <label for="others">Outros</label>
+                </div>
+                <div class="gender_input">
+                    <input type="radio" id="none" name="gender"/>
+                    <label for="none">Nao dizer</label>
+                </div>
+            </div>
+            <div class="button_continue">
+                <button>
+                    <a href="#">Continuar</a>
+                </button>
+            </div>
+        </form>  
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FightProject</title>
+    <link rel="stylesheet" href="./style_classes.css"/>
+</head>
+<body>
+    <div class="fightarea">
+        <div id="char">
+            <div class="lifebar">
+                <!--aqui so coloquei o width 10% p/ termos nocao de onde esta a barrinha-->
+                <div class="bar" style="width: 10%">
+                </div>
+            </div>
+            <strong class="name">--</strong>
+            <div>
+                <button class="attackbutton">Atacar</button>
+            </div>
+        </div>
+        <div id="monster">
+            <div class="lifebar">
+                <!--aqui so coloquei o width 10% p/ termos nocao de onde esta a barrinha-->
+                <div class="bar" style="width: 10%">
+                </div>
+            </div>
+            <strong class="name">--</strong>
+            <div>
+                <button class="attackbutton">Atacar</button>
+            </div>
+        </div>
+    </div>
+
+    <!--aqui msotrara os acontecimentos, historico da luta-->
+    <ul class="log"></ul>
+
+    <script src="fight_classes.js"></script>
+    <script src="script_classes.js"></script>
+</body>
+</html>
